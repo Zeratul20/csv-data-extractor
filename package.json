@@ -1,0 +1,32 @@
+{
+  "name": "csv-data-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "npx tsc",
+    "dev": "nodemon src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.17.1",
+    "@types/express": "^5.0.0",
+    "axios": "^1.8.4",
+    "axios-retry": "^4.5.0",
+    "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.12",
+    "nodemon": "^3.1.9"
+  }
+}

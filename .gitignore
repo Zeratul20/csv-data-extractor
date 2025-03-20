@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+elastic-start-local/.env
+.env
+sample-websites-company-names-mock.csv
+sample-websites-mock.csv
+dist
