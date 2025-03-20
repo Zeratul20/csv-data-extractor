@@ -30,9 +30,7 @@ import https from "https";
 //   },
 // });
 
-const httpsAgent = new https.Agent({
-  rejectUnauthorized: false, // Disable SSL certificate verification
-});
+const httpsAgent = new https.Agent({ rejectUnauthorized: false });
 
 export const axiosFetch = (url: string, timeout: number = 0) => {
   return axios.get(url, { httpsAgent, timeout });

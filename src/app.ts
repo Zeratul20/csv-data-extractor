@@ -10,7 +10,6 @@ import {
 } from "./helpers";
 import { mergeData } from "./utils/mergeData";
 import { csvWriter } from "./utils/csvWriter";
-import { getDomain } from "./utils/getDomain";
 import { createElasticIndex, insertElasticCompanies } from "./utils/elastic";
 import { updateElasticQuery } from "./helpers/updateElasticQuery";
 import * as dotenv from 'dotenv'; // Import dotenv

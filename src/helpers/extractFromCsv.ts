@@ -17,7 +17,6 @@ export const extractUrlsFromCsv = async (csvFilePath: string) => {
     fs.createReadStream(csvFilePath)
       .pipe(csv())
       .on("data", (row: Row) => {
-        // console.log("ROW: ", row);
         urls.push(row.domain.trim().replace("\n", ""));
       })
       .on("end", () => {
@@ -32,7 +31,6 @@ export const extractDataFromCsv = async (csvFilePath: string) => {
     fs.createReadStream(csvFilePath)
       .pipe(csv())
       .on("data", (row: Row) => {
-        // console.log("ROW: ", row);
         urls.push(row);
       })
       .on("end", () => {
